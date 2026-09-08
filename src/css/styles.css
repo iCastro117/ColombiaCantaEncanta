@@ -114,14 +114,14 @@ h2 { color: var(--blue); font-size: var(--font-title); line-height: 1.1; font-we
 
 .profile-view { color: var(--navy); }
 .profile-content { width: calc(100% - 32px); max-width: 500px; margin-inline: auto; padding: 30px 0 34px; }
-.profile-card { display: flex; align-items: center; gap: 16px; text-align: left; }
+.profile-card { display: flex; align-items: center; gap: 16px; text-align: left; margin-bottom: 26px; }
 .profile-avatar { flex: none; width: 92px; height: 92px; border-radius: 50%; object-fit: cover; border: 3px solid var(--yellow); }
 .profile-identity { min-width: 0; display: grid; gap: 4px; }
 .profile-identity h1 { font-size: calc(18px * var(--text-scale)); color: var(--blue); font-weight: 700; letter-spacing: -.5px; }
 .profile-identity p { font-size: var(--font-detail); color: #7a7a7a; overflow-wrap: break-word; }
-.profile-divider { display: flex; align-items: center; justify-content: center; gap: 10px; max-width: 230px; margin: 22px auto 26px; }
+.profile-divider { display: flex; align-items: center; gap: 10px; width: 100%; margin-top: 14px; }
 .profile-divider-line { flex: 1; height: 2px; background: var(--yellow); border-radius: 2px; }
-.profile-divider-dot { flex: none; width: 10px; height: 10px; background: var(--yellow); border-radius: 2px; transform: rotate(45deg); }
+.profile-divider-icon { flex: none; color: var(--yellow); }
 .profile-menu { display: grid; gap: 16px; }
 .profile-menu-item { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 76px; padding: 12px 16px; border: 0; border-radius: 14px; background: white; box-shadow: 0 4px 10px #0002; text-align: left; font: inherit; color: inherit; cursor: pointer; }
 .profile-menu-icon { flex: 0 0 42px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--yellow); color: var(--navy); }

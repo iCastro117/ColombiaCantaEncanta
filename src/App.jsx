@@ -207,9 +207,13 @@ function ProfileView() {
         <div className="profile-identity">
           <h1>Isabella Catro</h1>
           <p>isabellacastrocamacho117@gmail.com</p>
+          <div className="profile-divider" aria-hidden="true">
+            <span className="profile-divider-line" />
+            <Icon name="clover" size={22} className="profile-divider-icon" />
+            <span className="profile-divider-line" />
+          </div>
         </div>
       </div>
-      <div className="profile-divider" aria-hidden="true"><span className="profile-divider-line" /><span className="profile-divider-dot" /><span className="profile-divider-line" /></div>
       <div className="profile-menu">
         {profileMenu.map((item) => <button type="button" className="profile-menu-item" key={item.title}>
           <span className="profile-menu-icon"><Icon name={item.icon} size={22} /></span>

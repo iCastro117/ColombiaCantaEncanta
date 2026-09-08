@@ -14,6 +14,7 @@ export default function Icon({ name, size = 24, className = '' }) {
     search: <><circle cx="10" cy="10" r="6" /><path d="m15 15 6 6" /></>,
     filters: <><path d="M6 3v7m0 4v7m6-18v2m0 4v12m6-18v12m0 4v2M3 12h6m0-5h6m0 10h6" /></>,
     heart: <path d="M12 21 3.5 12C-3 5 7-1 12 6c5-7 15-1 8.5 6Z" />,
+    clover: <><circle cx="9" cy="9" r="4.5" /><circle cx="15" cy="9" r="4.5" /><circle cx="9" cy="15" r="4.5" /><circle cx="15" cy="15" r="4.5" /></>,
     book: <><path d="M4 5c3-2 6-2 8 0v14c-2-2-5-2-8 0Z" /><path d="M20 5c-3-2-6-2-8 0v14c2-2 5-2 8 0Z" /></>,
     clipboard: <><rect x="6" y="4" width="12" height="17" rx="2" /><path d="M9 4a3 3 0 0 1 6 0" /><path d="m9 12 2 2 4-4" /></>,
     upload: <><path d="M8 15H3V3h18v12h-5M9 21h6m-3-9v9m-4-10 4-4 4 4" /></>,
