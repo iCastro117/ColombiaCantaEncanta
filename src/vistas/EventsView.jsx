@@ -1,6 +1,6 @@
-import Icon from './Icons.jsx';
-import { images } from './images.js';
-import './css/events.css';
+import Icon from '../Icons.jsx';
+import { images } from '../images.js';
+import '../css/events.css';
 
 const events = [
   { id: 'canto', title: 'Festival infantil de canto', date: '15, Ago', location: 'Bogotá, Cundinamarca', category: 'Canto Infantil' },
@@ -52,5 +52,6 @@ export default function EventsView() {
         <span className="selected" aria-label="Página 1, actual">1</span><span>2</span><span>3</span><span>...</span>
       </div>
     </section>
+    <div className="pattern-band" aria-hidden="true" />
   </div>;
 }

@@ -1,5 +1,5 @@
-import Icon from './Icons.jsx';
-import { images } from './images.js';
+import Icon from '../Icons.jsx';
+import { images } from '../images.js';
 
 function FormSection({ number, title, children }) {
   return <section className="entry-section" aria-labelledby={`entry-section-${number}`}>
@@ -37,7 +37,7 @@ function UploadPlaceholder({ icon, title, description }) {
   </div>;
 }
 
-export default function RegistrationView() {
+export default function FormatoView() {
   return <div className="entry-view">
     <header className="entry-header">
       <img src={images.logo} alt="Colombia Canta y Encanta" />
@@ -78,5 +78,6 @@ export default function RegistrationView() {
         <div className="visual-button entry-next">Siguiente</div>
       </div>
     </div>
+    <div className="pattern-band" aria-hidden="true" />
   </div>;
 }
