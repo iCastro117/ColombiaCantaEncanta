@@ -118,7 +118,7 @@ h2 { color: var(--blue); font-size: var(--font-title); line-height: 1.1; font-we
 .profile-avatar { flex: none; width: 92px; height: 92px; border-radius: 50%; object-fit: cover; border: 3px solid var(--yellow); }
 .profile-identity { min-width: 0; display: grid; gap: 4px; }
 .profile-identity h1 { min-width: 0; font-size: calc(20px * var(--text-scale)); color: var(--blue); font-weight: 700; letter-spacing: -.5px; overflow-wrap: break-word; }
-.profile-identity p { min-width: 0; font-size: calc(11px * var(--text-scale)); color: #7a7a7a; overflow-wrap: break-word; }
+.profile-identity p { min-width: 0; font-size: calc(9px * var(--text-scale)); color: #7a7a7a; overflow-wrap: break-word; white-space: nowrap; }
 .profile-divider { display: flex; align-items: center; gap: 10px; width: 100%; margin-top: 14px; }
 .profile-divider-line { flex: 1; height: 2px; background: var(--yellow); border-radius: 2px; }
 .profile-divider-icon { flex: none; color: var(--yellow); }
