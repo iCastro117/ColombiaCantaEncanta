@@ -15,9 +15,9 @@ export default function ProfileView() {
     <div className="pattern-band" aria-hidden="true" />
     <section className="profile-content">
       <div className="profile-card">
-        <img className="profile-avatar" src={images.perfil} alt="Isabella Catro" />
+        <img className="profile-avatar" src={images.perfil} alt="Isabella Castro" />
         <div className="profile-identity">
-          <h1>Isabella Catro</h1>
+          <h1>Isabella Castro</h1>
           <p>isabellacastrocamacho117@gmail.com</p>
           <div className="profile-divider" aria-hidden="true">
             <span className="profile-divider-line" />
