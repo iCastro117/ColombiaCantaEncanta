@@ -69,7 +69,7 @@ export default function App() {
     if (view === 'formato') return <FormatoView />;
     if (view === 'profile') return <ProfileView />;
     if (view === 'login') return <LoginView onBack={() => navigate('home')} onRegister={() => navigate('register')} />;
-    if (view === 'register') return <RegisterView onBack={() => navigate('home')} onLogin={() => navigate('login')} />;
+    if (view === 'register') return <RegisterView onBack={() => navigate('home')} onLogin={() => navigate('login')} onCreateAccount={() => navigate('profile')} />;
     return <EventsView />;
   }
 

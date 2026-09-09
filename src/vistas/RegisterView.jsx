@@ -1,7 +1,7 @@
 import Icon from '../Icons.jsx';
 import { images } from '../images.js';
 
-export default function RegisterView({ onBack, onLogin }) {
+export default function RegisterView({ onBack, onLogin, onCreateAccount }) {
   return <div className="login-view">
     <button type="button" className="login-back" aria-label="Volver" onClick={onBack}><Icon name="left" size={22} /></button>
     <div className="login-content">
@@ -16,7 +16,7 @@ export default function RegisterView({ onBack, onLogin }) {
         <p>Completa tus datos para registrarte.</p>
       </div>
 
-      <form className="login-form" aria-label="Formulario de registro">
+      <form className="login-form" aria-label="Formulario de registro" onSubmit={(event) => { event.preventDefault(); onCreateAccount(); }}>
         <div className="login-field">
           <label htmlFor="register-name">Nombre completo<span className="entry-required"> *</span></label>
           <div className="login-input">
