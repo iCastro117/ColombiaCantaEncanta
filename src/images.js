@@ -15,6 +15,7 @@ function asset(name) {
 
 export const images = {
   logo: asset('logo/logo'),
+  logoAuth: asset('logo/LOGO2'),
   inicio: asset('inicio/festival'),
   carrusel: [1, 2, 3, 4].map((number) => asset(`carrusel/0${number}`)),
   canto: asset('cursos/canto'),

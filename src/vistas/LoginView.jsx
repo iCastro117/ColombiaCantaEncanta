@@ -5,7 +5,7 @@ export default function LoginView({ onBack, onRegister }) {
   return <div className="login-view">
     <button type="button" className="login-back" aria-label="Volver" onClick={onBack}><Icon name="left" size={22} /></button>
     <div className="login-content">
-      <img className="login-logo" src={images.logo} alt="Colombia Canta y Encanta" />
+      <img className="login-logo" src={images.logoAuth} alt="Colombia Canta y Encanta" />
       <div className="login-intro">
         <h1>Iniciar sesión</h1>
         <div className="profile-divider login-divider" aria-hidden="true">
