@@ -9,7 +9,7 @@
   --blue: #1e306f;
   --yellow: #ffc400;
   --cream: #fdf9e5;
-  --text-scale: 0.65;
+  --text-scale: 0.95;
   --font-title: calc(25px * var(--text-scale));
   --font-subtitle: calc(16px * var(--text-scale));
   --font-body: calc(12px * var(--text-scale));
