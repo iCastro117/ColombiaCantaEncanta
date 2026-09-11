@@ -41,27 +41,28 @@ function BottomBar({ view, onNavigate }) {
 
   return <nav className="bottom-bar" aria-label="Navegación principal">
     <div className="bottom-bar-inner">
-      {items.map((item) => item.view ? <button
+      {items.map((item) => item.view ? <button //recorre la lista de botones
         type="button"
-        className={`bottom-item ${view === item.view ? 'is-active' : ''}`}
+        className={`bottom-item ${view === item.view ? 'is-active' : ''}`} //si el bton es navegable se coloca su estado activo o coloreado
         key={item.icon}
         aria-label={item.label}
-        aria-current={view === item.view ? 'page' : undefined}
+        aria-current={view === item.view ? 'page' : undefined} //sino no pasa nada ye stas ahi en la pagina actual
         onClick={() => onNavigate(item.view)}
-      ><span><Icon name={item.icon} size={30} /></span></button> :
-        <div className="bottom-item" key={item.icon} role="img" aria-label={item.label}>
+      ><span><Icon name={item.icon} size={30} /></span></button> : //e item.icon es el nomrbe del icono 
+        <div className="bottom-item" key={item.icon} role="img" aria-label={item.label}> // es div porque n hay muchs otones funionale, xomo el del corazon
           <span><Icon name={item.icon} size={30} /></span>
         </div>)}
     </div>
   </nav>;
 }
 
+//el usuario decide a donde navegar, inicialmente e shome
 export default function App() {
   const [view, setView] = useState('home');
 
-  function navigate(nextView) {
+  function navigate(nextView) { //navega a otra agina
     setView(nextView);
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); // al cmabair de pagina se va al inicio de la pagina, sin animaciones osea instante para no empezar a verla desde la mitad de la pagina
   }
 
   function renderMain() {
@@ -73,11 +74,12 @@ export default function App() {
     return <EventsView />;
   }
 
+  //la uteticacion se da en login y registro no en otras vistas
   const isAuth = view === 'login' || view === 'register';
 
   return <>
-    <main>{renderMain()}</main>
-    {!isAuth && <Footer />}
-    {!isAuth && <BottomBar view={view} onNavigate={navigate} />}
+    <main>{renderMain()}</main> //arriba esta la funcion de render main
+    {!isAuth && <Footer />}  //la autenticacion no tiene ffoter 
+    {!isAuth && <BottomBar view={view} onNavigate={navigate} />} //saber en que pagina estamos y manejar su vector o incono corrcpondinete a la barar de navegacion + nagite de cmabair de pagiina
   </>;
 }

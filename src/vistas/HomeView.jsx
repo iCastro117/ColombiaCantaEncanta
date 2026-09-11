@@ -2,10 +2,12 @@ import { useState } from 'react';
 import Icon from '../Icons.jsx';
 import { images } from '../images.js';
 
+//banda decorativa
 function PatternBand() {
   return <div className="pattern-band" aria-hidden="true" />;
 }
 
+//onda
 function Wave({ bottom = false }) {
   return <svg className={`wave ${bottom ? 'wave-bottom' : ''}`} viewBox="0 0 390 90" preserveAspectRatio="none" aria-hidden="true">
     <path fill="var(--cream)" d="M0 45C25 12 77 5 110 23C131 34 133 53 149 57C168 27 218 20 253 39C275 52 282 54 300 47C325 18 366 16 390 26V90H0Z" />
@@ -20,10 +22,13 @@ const carouselSlides = [
   { image: images.carrusel[3], title: 'Coro Sirenaica', date: '21 Jul 2026', alt: 'Integrantes del Coro Sirenaica' },
 ];
 
+//app.js onPartivcipate
 function Hero({ onParticipate }) {
   const [slideIndex, setSlideIndex] = useState(0);
-  const slide = carouselSlides[slideIndex];
+  const slide = carouselSlides[slideIndex]; //comodidad
 
+
+  //cambia de direccion el carrusle y % para dar la vuelta de nuevo continuamente
   function changeSlide(direction) {
     setSlideIndex((current) => (current + direction + carouselSlides.length) % carouselSlides.length);
   }
@@ -84,16 +89,17 @@ function Festival() {
       <Wave />
       <div className="numbers-inner content-width">
         <div className="stats-grid">
-          {stats.map((stat) => <div className="stat-card" key={stat.label}>
-            <span className="stat-icon"><Icon name={stat.icon} size={29} /></span>
-            <strong>{stat.value}</strong>
-            <span>{stat.label}</span>
+          {stats.map((stat) => <div className="stat-card" key={stat.label}> //Por cada stat de la lista, dibuja una tarjeta.
+            <span className="stat-icon"><Icon name={stat.icon} size={29} /></span> // contiene el icno, el: 
+            <strong>{stat.value}</strong>//nuemro
+            <span>{stat.label}</span>//etiqueta i texto
           </div>)}
         </div>
         <div className="registration">
           <h2>Cómo inscribirse</h2>
-          <ol className="steps">
-            {steps.map(([title, description], index) => <li key={title}>
+          <ol className="steps"> //geenr aiuna lista ordenada de Ol de steps
+            {steps.map(([title, description], index) =>  //Por cada step de la lista, dibuja un item de lista qucontega el titulo y deipcion
+            <li key={title}>  //cada card contiene, numero titulo yd escripcion
               <span className="step-number">0{index + 1}</span>
               <div><h3>{title}</h3><p>{description}</p></div>
             </li>)}
